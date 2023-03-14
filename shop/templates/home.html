@@ -1,9 +1,17 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}
     Home
 {% endblock %}
 
 {% block content %}
-<h1>Home</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <img src="{% static 'photo_2021-10-11_18-44-15.jpg' %}" alt="" class="w-100 h-100">
+        </div>
+    </div>
+
 {% endblock %}
