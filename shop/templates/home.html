@@ -28,18 +28,18 @@
 
     <div class="container">
         <div class="row">
-            {% for i in 'aaaaaa' %}
+            {% for product in products %}
                 <div class="col-9 mx-auto col-md-6 col-lg-3">
                     <div class="card mb-5 bg-dark">
                         <div class="p-4">
-                            <img class="card-img-top" src="{% static 'images/yoda4.png' %}" alt="">
+                            <img class="card-img-top" src="{{product.image.url}}" alt="{{product.name}}">
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <p class="font-weight-bolt mb-0 text-success">
-                                Yoda
+                                {{product.name}}
                             </p>
                             <h5 class="text-info font-italic mb-0">
-                                100$
+                                {{product.price}}
                             </h5>
                         </div>
                     </div>
