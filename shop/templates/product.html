@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Product
+{% endblock %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row mt-5">
+            <div class="col-10 mx-auto col-md-6 my-3">
+                <img src="{% static 'images/samurai3.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="col-10 mx-auto col-md-6 my-3">
+        <div>
+            <h1 class="product_title">Samurai</h1>
+            <h5 class="text-info font-italic mb-0 mb-4">
+                100$
+            </h5>
+            <p class="product_desc">Product Description</p>
+            <p class="text-justify product-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores aut consectetur, delectus dicta dolores harum laborum maiores nostrum obcaecati perspiciatis, porro praesentium quidem repellat, repellendus unde voluptas? Hic, nam!</p>
+            <p class="text-justify product_text">Out of stock</p>
+        </div>
+    </div>
+{% endblock %}
